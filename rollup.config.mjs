@@ -8,5 +8,5 @@ export default {
 		file: 'lib/custom-element.js',
 		format: 'esm'
 	},
-	plugins: [typescript(), nodeResolve({extensions: ['.ts']})]
+	plugins: [typescript(), nodeResolve()]
 };
