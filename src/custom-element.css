@@ -1,0 +1,10 @@
+
+:host {
+  display: block;
+  border: solid 1px green;
+  padding: 16px;
+}
+
+button {
+  font-size: var(--custom-element-font-size, 16px);
+}

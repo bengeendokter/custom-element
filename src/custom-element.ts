@@ -1,5 +1,6 @@
-import {LitElement, html, css} from 'lit';
+import {LitElement, html} from 'lit';
 import {property, customElement} from 'lit/decorators.js';
+// import style from './custom-element.css';
 
 /**
  * An example element.
@@ -11,17 +12,7 @@ import {property, customElement} from 'lit/decorators.js';
  */
 @customElement('custom-element')
 export class CustomElement extends LitElement {
-  static styles = css`
-    :host {
-      display: block;
-      border: solid 1px gray;
-      padding: 16px;
-    }
-
-    button {
-      font-size: var(--custom-element-font-size, 16px);
-    }
-  `;
+  // static styles = [style];
 
   /**
    * The number of times the button has been clicked.
