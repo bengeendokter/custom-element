@@ -7,7 +7,8 @@ export default {
 	input: 'src/custom-element.ts',
 	output: {
 		file: 'lib/custom-element.js',
-		format: 'esm'
+		format: 'esm',
+		sourcemap: true
 	},
 	plugins: [
 		nodeResolve(),
