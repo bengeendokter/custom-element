@@ -1,6 +1,6 @@
-import {LitElement, html} from 'lit';
-import {property, customElement} from 'lit/decorators.js';
-// import style from './custom-element.css';
+import { LitElement, html } from 'lit';
+import { property, customElement } from 'lit/decorators.js';
+import style from './custom-element.css';
 
 /**
  * An example element.
@@ -11,16 +11,18 @@ import {property, customElement} from 'lit/decorators.js';
  * @cssprop --custom-element-font-size - The button's font size
  */
 @customElement('custom-element')
-export class CustomElement extends LitElement {
-  // static styles = [style];
+export class CustomElement extends LitElement
+{
+  static styles = [style];
 
   /**
    * The number of times the button has been clicked.
    */
-  @property({type: Number})
+  @property({ type: Number })
   count = 0;
 
-  render() {
+  render()
+  {
     return html`
       <h1>Hello World</h1>
       <button @click=${this._onClick} part="button">
@@ -30,9 +32,10 @@ export class CustomElement extends LitElement {
     `;
   }
 
-  protected _onClick() {
+  protected _onClick()
+  {
     this.count++;
-    const event = new Event('count-changed', {bubbles: true});
+    const event = new Event('count-changed', { bubbles: true });
     this.dispatchEvent(event);
   }
 }
