@@ -12,6 +12,6 @@ export default {
 	},
 	plugins: [
 		nodeResolve(),
-		litCss({include: ["src/**/*.css"]}),
+		litCss(),
 		typescript()]
 };
