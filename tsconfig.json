@@ -7,7 +7,6 @@
     "declarationMap": true,
     "sourceMap": true,
     "inlineSources": true,
-    "rootDir": "src",
     "outDir": "lib",
     "strict": true,
     "moduleResolution": "node",

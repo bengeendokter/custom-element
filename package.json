@@ -7,7 +7,8 @@
   "scripts": {
     "serve": "wds --node-resolve -nwo demo",
     "dev": "pnpm run \"/^(serve|build:watch)$/\"",
-    "build": "rollup --config"
+    "build": "rollup --config",
+    "build:watch": "rollup --config --watch"
   },
   "keywords": [
     "web-component",

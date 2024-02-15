@@ -13,5 +13,5 @@ export default {
 	plugins: [
 		nodeResolve(),
 		litCss(),
-		typescript()]
+		typescript({include: ['src/**/*.ts', 'css.d.ts']})]
 };
