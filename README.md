@@ -1,5 +1,5 @@
 # Custom Element
-Web component test with Lit and Rollup. With pnpm as package manager.
+Web component test build with Lit and Rollup. Uses pnpm as package manager.
 
 ## Make build
 ```node.js
@@ -9,7 +9,7 @@ pnpm build
 ```node.js
 pnpm serve
 ```
-## Development Server
+## Run development server with watch mode
 ```node.js
 pnpm dev
 ```
