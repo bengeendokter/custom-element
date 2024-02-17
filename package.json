@@ -28,9 +28,7 @@
     "typescript": "~5.2.0"
   },
   "exports": {
-    "./lib/custom-element.js": {
-      "default": "./lib/custom-element.js"
-    }
+    ".": "./lib/custom-element.js"
   },
   "files": [
     "/lib"
